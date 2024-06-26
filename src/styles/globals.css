@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    /* @apply; */
+  }
+  body {
+    /* @apply ; */
+  }
+}
+
+*, html {
+
+  scroll-behavior: smooth !important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+.container {
+  padding-top: 5rem;
+}
+
+select.decorated option:hover {
+  box-shadow: 0 0 10px 100px rgb(168, 24, 113) inset;
+}
+
+.swiper {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  /* padding-left: 100px; */
+  /* padding-right: 2000px; */
+}
+
+.swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: auto;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #0006);
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+  opacity: 0 !important;
+}
+
+#ControlledInput::-webkit-inner-spin-button,
+#ControlledInput::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#ControlledInput {
+  -moz-appearance: textfield;
+}
+
+.print-receipt{
+  margin: 8px;
+}
+
+
+
+@media (min-width: 1024px) {
+  .swiper-slide:not(.swiper-slide-active) {
+    opacity: 100 !important;
+  }
+}
