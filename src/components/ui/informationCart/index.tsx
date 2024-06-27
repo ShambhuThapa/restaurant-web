@@ -19,7 +19,7 @@ export const InformationCart: React.FC<IInformationCart> = (props) => {
           <Image
             height={900}
             width={530}
-            className="lg:absolute lg:left-[10%] left-[50%]-0 -top-[16%] lg:h-[36rem] h-[32rem] lg:px-0 px-8"
+            className="lg:absolute lg:left-[8%] left-[50%]-0 -top-[16%] lg:h-[32rem] h-[30rem] lg:px-0 px-8"
             alt="cover-image"
             src={imageUrl}
           />
@@ -35,7 +35,7 @@ export const InformationCart: React.FC<IInformationCart> = (props) => {
             )}
             variant="lg"
           >
-            our Chef’s story
+            Our Chef’s story
           </Header>
 
           <p
@@ -43,18 +43,8 @@ export const InformationCart: React.FC<IInformationCart> = (props) => {
               `${playfair_Display.variable} font-customFont text-sm`
             )}
           >
-            Onze chef Sajan is afkomstig uit Nepal en voor hem gaat niets boven zijn liefde
-          voor het vak. Al jong begon hij in diverse brasserieën en restaurants en leerde
-snel de basistechnieken van de Belgisch-Franse keuken. In 2016 maakte hij de
-overstap naar de Japanse keuken en wist meteen dat hij hierin zijn passie
-verder kon verdiepen. Consistentie in kwaliteit en smaak, presentatie, techniek
-en versheid van de producten, dat zijn de musthaves van onze chef.
-Met als basis die twee verschillende keukens én een jarenlange ervaring was
-onze chef klaar om met een eigen zaak te starten. Maar een horecazaak
-openen in volle pandemie? Dat is het avontuur dat Sajan aanging en ondanks
-twee lockdowns is hij er perfect in geslaagd om zijn jarenlange droom waar te
-maken.Dat hij al acht jaar ervaring heeft in de Oosterse keuken zul je ongetwijfeld
-proeven in al onze heerlijke gerechten.
+           Our chef Shambhu Thapa hails from Nepal and brings over 10 years of culinary expertise to our kitchen. Starting his journey in various brasseries and restaurants, he mastered the basics of cooking early on. In 2016, Shambhu transitioned to Japanese cuisine, instantly recognizing it as his true passion. He emphasizes consistency in quality and taste, presentation, technique, and the use of fresh ingredients.
+           Drawing from his diverse culinary background and extensive experience, Shambhu was prepared to open his own restaurant. Despite the challenges of launching during a pandemic, he successfully brought his long-held dream to life. The result? An extraordinary culinary experience that showcases his dedication and skill in Eastern cuisine, evident in every delicious dish.
           </p>
         </div>
       </div>

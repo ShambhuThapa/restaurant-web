@@ -77,20 +77,17 @@ const DishItems = ({ dish }: { dish: any }) => {
               <p className="text-gray-500 text-sm pt-1">{dish?.description}</p>
 
             <p className="mt-5 text-sm font-medium text-gray-700">
-              {/* Delivery discount : {dish?.deliveryDiscount} % */}
-              Korting (Levering) : {dish?.deliveryDiscount} %
+              Delivery discount : {dish?.deliveryDiscount} %
             </p>
             <p className="mt-1 text-sm font-medium text-gray-700">
-              Korting (Afhaal) : {dish?.takeAwayDiscount} %
-              {/* Take away discount : {dish?.takeAwayDiscount} % */}
+              Take away discount : {dish?.takeAwayDiscount} %
             </p>
           </div>
 
           <div className="mt-1  flex sm:justify-end justify-start sm:py-0 py-3 sm:m-0 -ml-28">
             <div className="">
               <Button
-                // label="Add to cart"
-                label="In winkelwagen"
+                label="Add to cart"
                 type="button"
                 className="px-3 w-auto"
                 disabled={!dish?.available}
@@ -117,14 +114,12 @@ const DishItems = ({ dish }: { dish: any }) => {
               )}
             </p>
             <span className="ml-2">
-              {/* {dish?.available ? "Available" : `Not available`} */}
-              {dish?.available ? "beschikbaar" : `Not available`}
+              {dish?.available ? "Available" : `Not available`}
             </span>
           </div>
 
           <div className="flex  items-center gap-x-2 ">
-            {/* <p>Quantity:</p> */}
-            <p>Aantal</p>
+            <p>Quantity:</p>
             <ControlledInput
               register={register}
               placeholder="0"

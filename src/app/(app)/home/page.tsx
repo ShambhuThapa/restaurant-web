@@ -72,21 +72,20 @@ const Page = () => {
                 `${playfair_Display_Sc.variable} font-customFontSc text-center lg:w-[40rem] w-full leading-10 font-semibold  bg-dark/50 lg:bg-transparent lg:px-0 `
               )}
             >
-              Rechtstreeks van onze chef <br /> naar jouw plek ! <br /> Bestel
-              en Geniet...
+             Directly from our chef <br /> to your place! <br /> Order and Enjoy...
             </Header>
             <div className="flex lg:flex-row flex-col  justify-evenly w-full lg:w-[40rem] lg:px-20 px-16 gap-2 lg:gap-0">
               <Link href={"/order"}>
                 <div className="px-5 w-full">
                   <Button
-                    label="BESTEL NU"
+                    label="ORDER NOW"
                     labelClassName={`${hammersmith.variable} font-sans text-sm font-thin tracking-[0.2rem]		 `}
                   />
                 </div>
               </Link>
               <Link href={"/menu"}>
                 <Button
-                  label="ONTDEK MENU"
+                  label="DISCOVER MENU"
                   labelClassName={`${hammersmith.variable} font-sans text-sm font-thin tracking-[0.2rem]		 `}
                 />
               </Link>
@@ -98,24 +97,23 @@ const Page = () => {
             imageUrl="/images/imageOne.png"
             mobileImageUrl="/images/imageOneMobile.png"
             header="SUSHI"
-            body="Bij ons draait alles om versheid en kwaliteit. Gezien de delicatesse van het
-gerecht, bereiden we uw sushi altijd à la minute met verse ingrediënten. Elke
-bestelling wordt zorgvuldig verpakt, zelfs gefrituurde sushirolls wachten tot het
-laatste moment. Zo geniet u van de authentieke smaak alsof het rechtstreeks uit
-uw eigen keuken komt."
+            body="With us, everything revolves around freshness and quality.
+             Given the delicacy of the dish, we always prepare
+             your sushi à la minute with fresh ingredients. Every order is carefully packed,
+              even fried sushi rolls wait until the last moment. This way, you can enjoy the
+               authentic taste as if it comes straight from your own kitchen."
           />
 
           <Divider className="bg-dark-100/10" />
 
           <ProductCart
-            reverse
-            imageUrl="/images/imageTwo.png"
-            mobileImageUrl="/images/imageTwoMobile.png"
-            header="Warme gerechten"
-            body="Warme gerechten worden met dezelfde zorg behandeld als onze sushi. Onze
-          chef selecteert handmatig groenten en vlees van een halal-gecertificeerde
-          leverancier. Een gouden regel voor al onze warme gerechten? Ze worden lastminute verpakt, zodat ze heerlijk warm zijn wanneer je ze opent in je eetkamer. "
+          reverse
+          imageUrl="/images/imageTwo.png"
+          mobileImageUrl="/images/imageTwoMobile.png"
+          header="Warm Dishes"
+          body="Warm dishes are treated with the same care as our sushi. Our chef hand-selects vegetables and meat from a halal-certified supplier. A golden rule for all our warm dishes? They are packed last minute, so they are wonderfully warm when you open them in your dining room."
           />
+
           <Divider className="bg-dark-100/10" />
         </div>
 
@@ -128,18 +126,14 @@ uw eigen keuken komt."
                 )}
                 variant="lg"
               >
-                verse ingredienten
+               Fresh Ingredients
               </Header>
               <p
                 className={cn(
                   `${playfair_Display.variable} font-customFont px-12 text-sm`
                 )}
               >
-                Van knapperige groenten tot zorgvuldig geselecteerde vis, elk
-                gerecht wordt doordrenkt met de levendigheid en smaak die alleen
-                verse ingrediënten kunnen bieden. Het is niet alleen een
-                principe, maar een onmisbare traditie die we hoog houden voor
-                een ongeëvenaarde culinaire ervaring.
+                From crispy vegetables to carefully selected fish, each dish is infused with the vibrancy and flavor that only fresh ingredients can offer. It is not just a principle but an indispensable tradition that we uphold for an unparalleled culinary experience
               </p>
             </div>
             <div className="grid grid-cols-3 grid-flow-col-1 lg:gap-28 gap-4">
@@ -170,7 +164,7 @@ uw eigen keuken komt."
         <Divider className="my-0 bg-dark-100/10" />
 
         <section className="py-28 lg:mt-20 mb-10">
-          <InformationCart imageUrl="/images/chef.jpeg" />
+          <InformationCart imageUrl="/images/chef.jpg" />
         </section>
 
         <div id="review">
@@ -178,7 +172,7 @@ uw eigen keuken komt."
         </div>
         <div className="flex w-96 m-auto  items-center justify-center">
           <Button
-            label="Deel jou mening"
+            label="Share your opinion"
             onClick={handleModel}
             className={cn(
               `${playfair_Display_Sc.variable} font-customFontSc flex justify  center sm:w-auto w-52 sm:-ml-0 -ml-3`
@@ -186,7 +180,6 @@ uw eigen keuken komt."
           />
         </div>
         <Divider className="my-14 bg-dark-100/10" />
-
         <InstaGramFeeds />
 
         <Link

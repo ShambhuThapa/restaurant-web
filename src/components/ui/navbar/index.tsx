@@ -15,7 +15,7 @@ import { playfair_Display } from "@/app/layout";
 const navigation = [
   { name: "Home", href: "/home" },
   { name: "Reviews", href: "/home#review" },
-  { name: "Bestel", href: "/order" },
+  { name: "Order", href: "/order" },
   { name: "Contact", href: "/contact" },
   { name: "Blogs", href: "/blogs" },
   { name: "Menu", href: "/menu" },
@@ -126,17 +126,10 @@ export const Navbar = ({ header }: { header: string }) => {
                 <p
                   className={`text-sm text-gray-900 ${playfair_Display.variable} font-customFont`}
                 >
-                  {!status?.isClosed ? (
-                    <p>
-                      We zijn momenteel open. Plaats eenvoudig je bestelling via
-                      ons bestelplatform of bel ons op +32 3 337 92 29.
-                    </p>
-                  ) : (
-                    <p>
-                      We zijn momenteel gesloten. U kan nu jou bestelling
-                      doorgeven via onze bestelplatform.
-                    </p>
-                  )}
+                   {!status?.isClosed ? (
+                   <p>{restaurantStatus["open"]}</p>
+                   ) : (
+                   <p>{restaurantStatus["close"]}</p>)}
                 </p>
               </div>
               <div className="px-4 pb-2">

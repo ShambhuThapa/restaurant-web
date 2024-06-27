@@ -40,7 +40,7 @@ const Page = () => {
         >
           <ShoppingCartIcon className="text-white" />
 
-          <div className="w-[25px] h-[25px] z-50 rounded-full bg-blue-500 text-white flex items-center justify-center absolute -left-4">
+          <div className="w-[25px] h-[25px] z-50 rounded-full bg-red-400 text-white flex items-center justify-center absolute -left-4">
             <span className="">{orders?.length}</span>
           </div>
         </div>
@@ -50,8 +50,7 @@ const Page = () => {
           {/* dish types */}
           <section className=" text-dark lg:w-[20rem] p-5 h-[80vh] overflow-y-auto   lg:sticky  lg:top-20">
             <Header variant="lg" className="py-0 text-primary-400">
-              {/* Dish Types */}
-              Categorieën gerechten
+              Dish Types
             </Header>
             <Divider variant="full" className="h-[1px] my-2 bg-gray-300" />
 
@@ -76,8 +75,7 @@ const Page = () => {
 
           <section className="bg-white text-primary-400   shadow-md lg:w-[70rem] rounded lg:p-5 p-2">
             <Header variant="lg" className="py-0 pb-3">
-              {/* Dishes */}
-              Gerechten
+              Dishes
             </Header>
 
             <Divider

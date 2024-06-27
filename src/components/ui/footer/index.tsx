@@ -78,17 +78,17 @@ export const Footer = () => {
           />
 
           <p className="text-base pt-7 lg:py-8  lg:px-2 px-12">
-            Openingstijden: Alle dagen behalve woensdag van 16:00 tem 21:45
+          Opening hours: Every day except Wednesday from 6am to 10pm
           </p>
-          <Link
+          {/* <Link
             target="_blank"
-            href={"https://restaurantguru.com/Sushi-Merksem-Antwerp"}
+            href={"/"}
             className="mx-auto"
           >
             <div className="flex items-center justify-center lg:mb-4 lg:mt-0 mt-4">
               <RibbonComponent />
             </div>
-          </Link>
+          </Link> */}
           <Divider className="lg:hidden py-0 mt-10 bg-white " />
           {/* <p className="text-sm pt-7 lg:py-10 px-2">{data?.address}</p> */}
           <div
@@ -99,13 +99,12 @@ export const Footer = () => {
             {data?.city ? (
               <p>{`${data?.street}  ${data?.houseNumber},  ${data?.postalCode}  ${data?.city}`}</p>
             ) : (
-              "Annnuntiatenstraat 1, 2170 Merksem"
+              "Baneshowr,Kathmandu ,Nepal"
             )}
             <p className="font-extrabold lg:block hidden">|</p>
-            <p>+32 3 337 92 29 </p>
+            <p><a href={`tel:${data?.phone || "+977 12345"}`}>{data?.phone ||  "+977 12345"}</a></p>
             <p className="font-extrabold lg:block hidden">|</p>
-
-            <p>{data?.email || "sushimerksem@gmail.com"}</p>
+            <p><a href={`mailto:${data?.email || "resturant@gmail.com"}`}>{data?.email || "resturant@gmail.com"}</a></p>
           </div>
         </div>
       </section>

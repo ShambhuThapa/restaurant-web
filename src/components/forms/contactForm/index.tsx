@@ -15,7 +15,8 @@ import { SubmitHandler, useForm } from "react-hook-form";
 
 import { contactSchema, IContact } from "@/lib/validation/contactSchema";
 import { useAddContactMessage } from "@/hooks/api/contactMessage/useAddContactMessage";
-import PrivacyPolicy from "@/app/privacyPolicy/page";
+import { PrivacyPolicy } from "@/app/privacyPolicy/page";
+
 
 export const ContactForm = () => {
   const [isPolicy, setPolicy] = useState(false);
@@ -86,14 +87,14 @@ export const ContactForm = () => {
             error={errors?.message?.message as string}
           />
           <Checkbox
-            register={register}
-            leftLabel="Ik heb de "
-            rightLabel=" gelezen en ben hiermee akkoord."
-            linkLabel={"privacy policy"}
-            linkClick={() => setPolicy(true)}
-            name="policy"
-            error={errors?.policy?.message as string}
-          />
+          register={register}
+          leftLabel="I have read the "
+          rightLabel=" and agree to it."
+          linkLabel={"privacy policy"}
+          linkClick={() => setPolicy(true)}
+          name="policy"
+          error={errors?.policy?.message as string}/>
+
           <div className="pt-4 w-[12rem]">
             <Button
               label="SEND"

@@ -13,37 +13,15 @@ const Page = () => {
           <ContactForm />
         </div>
         <div className=" lg:order-2 relative order-1 ">
-          <Image
-            src="/images/contactimage.png"
-            alt="contact"
-            width={900}
-            height={980}
-            className="lg:absolute lg:top-[-8rem] right-2 lg:w-full w-full  lg:h-[1020px]  h-[65rem]"
-          />
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3532.925745419086!2d85.32805055379865!3d27.68868979805986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurants!5e0!3m2!1sen!2snp!4v1719460657856!5m2!1sen!2snp" width="500" height="450" style={{border:"0"}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-      <div className="lg:h-[30rem]  lg:flex-row lg:gap-12  bg-dark lg:px-28 px-2 py-12 flex flex-col gap-6">
-        <div className="lg:w-72 h-[17rem] ">
-          <Header variant="sm" className="normal-case py-0">
-            Annuntiatenstraat 1,
-          </Header>
-          <Header variant="sm" className="normal-case py-0">
-            2170 Merksem
-          </Header>
-          <Header variant="sm" className="normal-case py-0">
-          +32 3 337 92 29 
-          </Header>
-          <Header variant="sm" className="normal-case py-0 pb-2">
-            sushimerksem@gmail.com
-          </Header>
-          <Divider variant="full" className="h-[1px]" />
-          <p className="py-3 text-[14px]">
+      <div className="lg:px-28 px-2 py-12">
+        <p className="py-3 text-[14px]">
             Ons restaurant bevindt zich op de hoek aan Sint-Franciscusplein(waar
             de dinsdagmarkt plaatsvindt), slechts 2 minuten van de Bredabaan,
             met ruim voldoende parkeergelegenheid.
           </p>
-        </div>
-        <div className="bg-[url('/images/map.jpg')] lg:w-60 w-full lg:h-[17rem] h-[15rem] "></div>
       </div>
     </div>
   );

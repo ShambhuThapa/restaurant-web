@@ -1,585 +1,225 @@
+
 import { Divider, Header } from "@/components";
 
-const PrivacyPolicy = () => {
+export const PrivacyPolicy = () => {
   return (
     <div className="w-full flex flex-col gap-y-4 lg:px-5 px-0 py-7 text-justify text-gray-700">
-      <Header className="my-0 py-0 text-center ">Privacy verklaring</Header>
+      <Header className="my-0 py-0 text-center ">Privacy Policy</Header>
       <Divider variant="full" className="my-0 mb-3" />
       <div>
-        <Header className="my-0  p-0">Privacy verklaring</Header>
+        <Header className="my-0  p-0">Privacy Policy</Header>
         <p className="py-3 text-lg">
-          Deze privacy policy heeft betrekking op de website
-          www.sushimerksem.be, hierna aangeduid als de &quot;Website&quot;, en
-          informeert bezoekers over de manier waarop persoonsgegevens worden
-          verzameld en verwerkt door de Verwerkingsverantwoordelijke. Kalika Bv,
-          met haar maatschappelijke zetel gevestigd aan Annuntiatenstraat 1,
-          2170 Merksem en ingeschreven in de Kruispuntbank van Ondernemingen
-          onder het nummer 0756.809.638, fungeert als de
-          &quot;Verwerkingsverantwoordelijke&quot;.
+          This privacy policy applies to the website www.examplewebsite.com,
+          hereinafter referred to as the Website and informs visitors about
+          how personal data is collected and processed by the Data Controller.
+          [Company Name], with its registered office located at [Address] and
+          registered in the [Business Registry] under number [Registry Number],
+          acts as the Data Controller.
         </p>
         <p className="py-3 text-lg">
-          De Privacy Policy is een uiting van het voornemen van de
-          Verwerkingsverantwoordelijke om in alle transparantie op te treden,
-          dit in overeenstemming met de Wet betreffende de bescherming van
-          natuurlijke personen met betrekking tot de verwerking van
-          persoonsgegevens in overeenstemming 30 juli 2018 en met de Verordening
-          (EU) 2016/679 van het Europees Parlement en de Raad van 27 april 2016
-          betreffende de bescherming van natuurlijke personen in verband met de
-          verwerking van persoonsgegevens en betreffende het vrije verkeer van
-          die gegevens en tot intrekking van Richtlijn 95/46/EG (hierna de
-          “Algemene Verordening Gegevensbescherming” genoemd).
+          The Privacy Policy reflects the Data Controllers intention to act in
+          full transparency, in accordance with the Law concerning the protection
+          of natural persons with regard to the processing of personal data and
+          with the General Data Protection Regulation (GDPR).
         </p>
         <p className="py-3 text-lg">
-          Bijzondere aandacht wordt besteed aan de bescherming van het
-          privéleven van gebruikers, waarbij de Verwerkingsverantwoordelijke
-          zich verbindt om alle noodzakelijke en redelijke maatregelen te nemen
-          ter bescherming van persoonsgegevens tegen verlies, diefstal,
-          verspreiding of ongeoorloofd gebruik.
+          Special attention is given to the protection of users privacy, with
+          the Data Controller committed to taking all necessary and reasonable
+          measures to protect personal data against loss, theft, dissemination,
+          or unauthorized use.
         </p>
 
         <p className="py-3 text-lg">
-          De term &quot;persoonsgegevens&quot; verwijst naar alle informatie met
-          betrekking tot een geïdentificeerde of identificeerbare natuurlijke
-          persoon, waarbij een persoon als identificeerbaar wordt beschouwd als
-          hij direct of indirect kan worden geïdentificeerd.
+          The term personal data refers to any information relating to an
+          identified or identifiable natural person, with a person being
+          identifiable if they can be identified directly or indirectly.
         </p>
         <p className="py-3 text-lg">
-          Gebruikers die willen reageren op een van de bepalingen vermeld in de
-          Privacy Policy kunnen contact opnemen met de
-          Verwerkingsverantwoordelijke via het postadres of e-mailadres vermeld
-          in het gedeelte &quot;contactgegevens&quot; van de Privacy Policy.
+          Users wishing to comment on any of the provisions mentioned in the
+          Privacy Policy can contact the Data Controller via the postal address
+          or email address provided in the contact details section of the
+          Privacy Policy.
         </p>
       </div>
 
       <div>
-        <Header className="my-0  p-0">WELKE GEGEVENS VERZAMELEN WIJ?</Header>
+        <Header className="my-0  p-0">WHAT DATA DO WE COLLECT?</Header>
         <div className="py-3 text-lg">
-          De Verwerkingsverantwoordelijke haalt en verwerkt de volgende
-          persoonsgegevens op, volgens de hieronder beschreven modaliteiten en
-          principes:
-          <li>
-            Het domein van de gebruiker, inclusief het dynamische IP-adres
-            (automatisch opgepikt door de server van de
-            Verwerkingsverantwoordelijke).
-          </li>
-          <li>
-            Het e-mailadres van de gebruiker, als deze dit vooraf heeft
-            ingevoerd, bijvoorbeeld door berichten te plaatsen op de Website,
-            vragen te stellen, via e-mail te communiceren met de
-            Verwerkingsverantwoordelijke, deel te nemen aan discussiefora, zich
-            te identificeren voor toegang tot een beperkt deel van de Website,
-            enz.
-          </li>
-          <li>
-            Informatie over de pagina&#39;s die de gebruiker heeft bezocht op de
-            Website.
-          </li>
-          <li>
-            Alle vrijwillig verstrekte informatie door de gebruiker, zoals bij
-            enquêtes, inschrijvingen op de Website, of door identificatie voor
-            toegang tot een beperkt deel van de Website.
-          </li>
+          The Data Controller collects and processes the following personal data,
+          according to the modalities and principles described below:
+          <ul className="pl-6">
+            <li>
+              The user&apos;`s domain, including the dynamic IP address (automatically
+              picked up by the Data Controllers server).
+            </li>
+            <li>
+              The user&apos;s email address, if provided in advance, for example, by
+              posting messages on the Website, asking questions, communicating
+              via email with the Data Controller, participating in discussion
+              forums, identifying themselves to access a restricted part of the
+              Website, etc.
+            </li>
+            <li>
+              Information about the pages visited by the user on the Website.
+            </li>
+            <li>
+              Any voluntarily provided information by the user, such as in
+              surveys, registrations on the Website, or by identification to
+              access a restricted part of the Website.
+            </li>
+          </ul>
         </div>
         <p className="py-3 text-lg">
-          De Verwerkingsverantwoordelijke kan ook gegevens verzamelen zonder
-          persoonlijk karakter. Deze worden beschouwd als niet-persoonsgegevens
-          en kunnen voor elk doel worden gebruikt, bijvoorbeeld voor
-          verbeteringen aan de Website, producten en diensten, of publicaties
-          van de Verwerkingsverantwoordelijke.
+          The Data Controller may also collect data without personal
+          characteristics. These are considered non-personal data and can be used
+          for any purpose, such as improving the Website, products and services,
+          or publications of the Data Controller.
         </p>
         <p className="py-3 text-lg">
-          Als persoonsgegevens worden gecombineerd met niet-persoonsgegevens,
-          zodat identificatie van betrokken personen mogelijk is, worden deze
-          behandeld als persoonsgegevens totdat de betrokken personen niet
-          langer kunnen worden geïdentificeerd op basis van de gegevens,
-          waardoor de link tussen persoonsgegevens en niet-persoonsgegevens
-          wordt verbroken.
+          If personal data is combined with non-personal data so that
+          identification of individuals is possible, they are treated as personal
+          data until individuals can no longer be identified based on the data,
+          thereby breaking the link between personal and non-personal data.
         </p>
       </div>
 
       <div>
-        <Header className="my-0  p-0">HOE WORDEN DE GEGEVENS VERZAMELD?</Header>
+        <Header className="my-0  p-0">HOW ARE DATA COLLECTED?</Header>
         <div className="py-3 text-lg">
-          De Verwerkingsverantwoordelijke verzamelt gegevens op verschillende
-          manieren, namelijk:
+          The Data Controller collects data in various ways, namely:
           <ul className="pl-6">
-            <li className="list-decimal">
-              Door middel van een contactformulier.
-            </li>
-            <li className="list-decimal">
-              Door inschrijving op een nieuwsbrief.
-            </li>
-            <li className="list-decimal">Via de klantenzone.</li>
-            <li className="list-decimal">Via de webshop.</li>
+            <li>Through a contact form.</li>
+            <li>By subscribing to a newsletter.</li>
+            <li>Through the customer area.</li>
+            <li>Through the webshop.</li>
           </ul>
         </div>
       </div>
 
       <div>
         <Header className="my-0  p-0">
-          WAT ZIJN DE DOELEINDEN VAN DE VERWERKING?
+          WHAT ARE THE PURPOSES OF THE PROCESSING?
         </Header>
         <div className="py-3 text-lg">
-          De persoonsgegevens worden verzameld en verwerkt voor verschillende
-          doeleinden, waaronder:
-          <li>
-            Zorgen voor het beheer en de controle van de uitvoering van
-            aangeboden diensten;
-          </li>
-          <li>Verzenden en opvolgen van bestellingen en facturen;</li>
-          <li>
-            Versturen van promotionele informatie over producten en diensten
-            door de Verwerkingsverantwoordelijke;
-          </li>
-          <li>Versturen van promotiemateriaal;</li>
-          <li>Beantwoorden van vragen van gebruikers;</li>{" "}
-          <li>Opstellen van statistieken;</li>{" "}
-          <li>
-            Verbeteren van de kwaliteit van de website, producten en/of diensten
-            door de Verwerkingsverantwoordelijke;
-          </li>
-          <li>
-            Doorsturen van informatie over nieuwe producten en/of diensten door
-            de Verwerkingsverantwoordelijke;
-          </li>
-          <li>Uitvoeren van commerciële prospectie;</li>
-          <li>Identificeren van de interesses van de gebruiker.</li>
-          Wij gebruiken en bewerken ook persoonlijke gegevens voor de volgende
-          doeleinden:
-          <li>Het delen van gegevens met een zakelijke partner.</li>
-          <li>
-            Het doorgeven van gegevens aan een dochteronderneming of een ander
-            bedrijf binnen onze groep.
-          </li>
-          Als de persoon die verantwoordelijk is voor de gegevensverwerking
-          besluit om handelingen uit te voeren die niet in dit privacybeleid
-          staan, zal deze persoon de gebruiker op de hoogte stellen van de
-          veranderingen en de gebruiker de mogelijkheid geven om dergelijk
-          gebruik te weigeren voordat zijn persoonlijke gegevens worden
-          gebruikt.
+          Personal data is collected and processed for various purposes,
+          including:
+          <ul className="pl-6">
+            <li>Ensuring the management and monitoring of services offered;</li>
+            <li>Sending and tracking orders and invoices;</li>
+            <li>
+              Sending promotional information about products and services by the
+              Data Controller;
+            </li>
+            <li>Sending promotional material;</li>
+            <li>Responding to user inquiries;</li>{" "}
+            <li>Compiling statistics;</li>{" "}
+            <li>
+              Improving the quality of the website, products, and/or services by
+              the Data Controller;
+            </li>
+            <li>
+              Sending information about new products and/or services by the Data
+              Controller;
+            </li>
+            <li>Conducting commercial prospecting;</li>
+            <li>Identifying user interests.</li>
+          </ul>
+          We also use and process personal data for the following purposes:
+          <ul className="pl-6">
+            <li>Sharing data with a business partner.</li>
+            <li>
+              Transferring data to a subsidiary or another company within our
+              group.
+            </li>
+          </ul>
+          If the person responsible for data processing decides to take actions
+          that are not stated in this privacy policy, that person will notify the
+          user of the changes and provide the user with the opportunity to refuse
+          such use before their personal data is used.
         </div>
       </div>
 
       <div>
-        <Header className="my-0  p-0">GERECHTVAARDIGDE BELANGEN</Header>
+        <Header className="my-0  p-0">LEGITIMATE INTERESTS</Header>
         <div className="py-3 text-lg">
-          Bepaalde verwerkingen door de Verwerkingsverantwoordelijke zijn
-          gegrond op de wettelijke basis van zijn gerechtvaardigd belang. Deze
-          gerechtvaardigde belangen zijn proportioneel met de naleving van de
-          rechten en vrijheden van de gebruiker. Indien de gebruiker meer
-          informatie wenst over de verwerkingsdoeleinden gegrond op het
-          gerechtvaardigd belang, wordt deze uitgenodigd contact op te nemen met
-          de Verwerkingsverantwoordelijke (zie “contactgegevens” in deze Privacy
-          Policy).
+          Certain processing activities by the Data Controller are based on the
+          legal basis of its legitimate interests. These legitimate interests are
+          proportionate to compliance with the rights and freedoms of the user. If
+          the user wishes to obtain more information about the processing purposes
+          based on legitimate interest, they are invited to contact the Data
+          Controllercontact details in this Privacy Policy.
         </div>
       </div>
 
       <div>
-        <Header className="my-0  p-0">GERECHTVAARDIGDE BELANGEN</Header>
+        <Header className="my-0  p-0">DATA RETENTION PERIOD</Header>
         <div className="py-3 text-lg">
-          Bepaalde verwerkingen door de Verwerkingsverantwoordelijke zijn
-          gegrond op de wettelijke basis van zijn gerechtvaardigd belang. Deze
-          gerechtvaardigde belangen zijn proportioneel met de naleving van de
-          rechten en vrijheden van de gebruiker. Indien de gebruiker meer
-          informatie wenst over de verwerkingsdoeleinden gegrond op het
-          gerechtvaardigd belang, wordt deze uitgenodigd contact op te nemen met
-          de Verwerkingsverantwoordelijke (zie “contactgegevens” in deze Privacy
-          Policy).
-        </div>
-      </div>
-
-      <div>
-        <Header className="my-0  p-0">DUURTIJD VAN DE BEWARING</Header>
-        <div className="py-3 text-lg">
-          De Verwerkingsverantwoordelijke bewaart in het algemeen de
-          persoonsgegevens enkel in de periode die redelijkerwijs noodzakelijk
-          is om de vooropgestelde doelen te verwezenlijken en in overeenstemming
-          met de wettelijke en reglementaire vereisten.
+          The Data Controller generally retains personal data only for the period
+          reasonably necessary to achieve the stated purposes and in compliance
+          with legal and regulatory requirements.
           <br />
-          De persoonsgegevens van een klant worden maximum 10 jaar bewaard na
-          beëindiging van de contractuele relatie die de klant aan de
-          Verwerkingsverantwoordelijke bindt.
+          A customer&apos;s personal data is retained for a maximum of 10 years after
+          termination of the contractual relationship binding the customer to the
+          Data Controller.
           <br />
-          Bij afloop van de termijn van bewaring zal de
-          Verwerkingsverantwoordelijke alles in het werk stellen om zich ervan
-          te verzekeren dat de persoonsgegevens onbeschikbaar en onbereikbaar
-          werden gemaakt.
+          At the end of the retention period, the Data Controller will take all
+          reasonable steps to ensure that the personal data is made unavailable
+          and inaccessible.
         </div>
       </div>
 
       <div>
-        <Header className="my-0  p-0">UITOEFENING VAN RECHTEN</Header>
+        <Header className="my-0  p-0">EXERCISING RIGHTS</Header>
         <div className="py-3 text-lg">
-          Met betrekking tot alle rechten die hieronder worden vermeld, behoudt
-          de Verwerkingsverantwoordelijke zich het recht voor de identiteit van
-          de betrokken persoon na te gaan.
+          With regard to all rights listed below, the Data Controller reserves the
+          right to verify the identity of the data subject.
           <br />
-          Deze bijkomende informatie zal binnen een termijn van één maand na de
-          aanvraag door de betrokken persoon worden gevraagd.
+          This additional information will be requested within one month after the
+          request by the data subject.
+        </div>
+      </div>
+
+      <div>
+        <Header className="my-0  p-0">ACCESS TO DATA AND COPIES</Header>
+        <div className="py-3 text-lg">
+          The user can obtain, free of charge, their written correspondence or a
+          copy of their personal data processed by the Data Controller.
+          <br />
+          The Data Controller may require the user to pay all reasonable costs,
+          based on administrative costs, for any additional copy requested by the
+          user.
+          <br />
+          Once the user submits this request electronically, the information will
+          also be delivered electronically unless the user wishes otherwise.
+          Unless otherwise provided in the General Data Protection Regulation, the
+          copy of their data will be communicated to the data subject no later
+          than 6 months after receiving their request.
+        </div>
+      </div>
+
+      <div>
+        <Header className="my-0  p-0">RIGHT TO RECTIFICATION</Header>
+        <div className="py-3 text-lg">
+          The user can request, free of charge, the rectification of their
+          personal data if it contains errors, is incomplete, or is irrelevant,
+          and request that their data be supplemented if it is found to be
+          incomplete.
+          <br />
+          Unless otherwise provided in the General Data Protection Regulation, the
+          request will be processed within one month after its submission.
         </div>
       </div>
 
       <div>
         <Header className="my-0  p-0">
-          TOEGANG TOT DE GEGEVENS EN KOPIEËN
+          RIGHT TO OBJECT TO PROCESSING
         </Header>
         <div className="py-3 text-lg">
-          De gebruiker kan kosteloos zijn geschreven correspondentie verkrijgen
-          of een kopie van de zijn persoonsgegevens die verwerkt werden door de
-          Verwerkingsverantwoordelijke.
-          <br />
-          De Verwerkingsverantwoordelijke kan van de gebruiker betaling eisen
-          van alle redelijke kosten, op basis van de administratieve kosten voor
-          iedere bijkomende kopie die door de gebruiker gevraagd wordt.
-          <br />
-          Van zodra de gebruiker deze vraag via elektronische weg indient, zal
-          de informatie ook op elektronische wijze afgeleverd worden, tenzij de
-          gebruiker dit anders wenst. Behoudens andersluidend beding in de
-          Algemene Verordening Gegevensbescherming, zal de kopie van zijn
-          gegevens aan de betrokkene gecommuniceerd worden uiterlijk binnen 6
-          maanden na ontvangst van zijn aanvraag.
-        </div>
-      </div>
-
-      <div>
-        <Header className="my-0  p-0">RECHT OP VERBETERING</Header>
-        <div className="py-3 text-lg">
-          De gebruiker kan op kosteloze wijze de verbetering vragen van zijn
-          persoonsgegevens indien deze fouten zouden bevatten, onvolledig of
-          irrelevant zouden zijn, alsook vragen dat zijn gegevens zouden worden
-          aangevuld indien deze onvolledig blijken te zijn.
-          <br />
-          Behoudens andersluidend beding in de Algemene Verordening
-          Gegevensbescherming, wordt de aanvraag behandeld binnen de maand na
-          het indienen ervan.
-        </div>
-      </div>
-
-      <div>
-        <Header className="my-0  p-0">
-          HET RECHT OM ZICH TEGEN DE VERWERKING TE VERZETTEN
-        </Header>
-        <div className="py-3 text-lg">
-          De gebruiker kan op ieder ogenblik, om redenen die verband houden met
-          zijn persoonlijke situatie, zich kosteloos verzetten tegen de
-          verwerking van zijn persoonsgegevens:
-          <li>
-            Wanneer de verwerking nodig is voor de vervulling van een taak van
-            algemeen belang dan wel voor een taak in het kader van de
-            uitoefening van het openbaar gezag;
-          </li>
-          <li>
-            Wanneer de verwerking noodzakelijk is voor de behartiging van de
-            gerechtvaardigde belangen van de Verwerkingsverantwoordelijke, mits
-            het belang of de grondrechten en fundamentele vrijheden van de
-            betrokkene niet boven dat belang prevaleren (met name wanneer de
-            betrokkene een kind is).
-          </li>
-          De Verwerkingsverantwoordelijke kan weigeren om het verzet van de
-          gebruiker uit te voeren, indien deze het bestaan van dwingende en
-          legitieme motieven vaststelt die de verwerking rechtvaardigen, die
-          prevaleren op de belangen of de rechten en de vrijheden van de
-          gebruiker, of wanneer deze aangewend worden voor een betwisting in
-          rechte, het voeren van een verdediging in rechte of voor de
-          uitoefening van rechten. Ingeval van betwisting kan de gebruiker
-          hiertegen in beroep gaan overeenkomstig hetgeen bepaald werd in het
-          punt “bezwaar en klachten” van de Privacy Policy.
-          <br />
-          De gebruiker kan zich op ieder moment, zonder enige rechtvaardiging en
-          op kosteloze wijze, verzetten tegen de verwerking van zijn
-          persoonsgegevens, indien deze gegevens verzameld werden om aan
-          commerciële prospectie te doen (hierin begrepen profilering).
-          <br />
-          Indien de persoonsgegevens worden aangewend in het kader van
-          wetenschappelijk of historisch onderzoek of met statistische
-          doeleinden conform de Algemene Verordening Gegevensbescherming, heeft
-          de gebruiker het recht om zich tegen de verwerking van zijn
-          persoonsgegevens te verzetten, dit om redenen die verband houden met
-          zijn persoonlijke situatie, tenzij de verwerking noodzakelijk zou zijn
-          voor een taak in het kader van de uitoefening van het openbaar gezag.
-          <br />
-          Behoudens andersluidend beding in de Algemene Verordening
-          Gegevensbescherming, is de Verwerkingsverantwoordelijke ertoe gehouden
-          om binnen een redelijke termijn en uiterlijk binnen de maand te
-          antwoorden op de vraag van de gebruiker en dient deze zijn antwoord te
-          motiveren indien hij voornemens is geen gunstig gevolg aan de vraag
-          van de gebruiker te verlenen.
-        </div>
-      </div>
-
-      <div>
-        <Header className="my-0  p-0">
-          HET RECHT OP BEPERKING VAN DE VERWERKING
-        </Header>
-        <div className="py-3 text-lg">
-          De gebruiker kan de beperking verkrijgen van de verwerking van zijn
-          persoonsgegevens, in volgende gevallen:
-          <li>
-            Wanneer de gebruiker de juistheid van een gegeven betwist en enkel
-            voor de periode die de Verwerkingsverantwoordelijke nodig heeft om
-            dit na te kijken;
-          </li>
-          <li>
-            Wanneer het gebruik ongeoorloofd is of wanneer de gebruiker de
-            beperking van de werking verkiest boven de uitwissing van de
-            gegevens;
-          </li>
-          <li>
-            Wanneer de gebruiker deze beperking nodig heeft voor een betwisting,
-            uitoefening of verdediging in rechte, hoewel dit niet meer
-            noodzakelijk is voor de voortzetting van de doeleinden van de
-            verwerking;
-          </li>
-          <li>
-            Gedurende de periode die noodzakelijk is om de gegrondheid van een
-            aanvraag tot verzet te onderzoeken, met andere woorden, de periode
-            die de Verwerkingsverantwoordelijke nodig heeft om een afweging te
-            maken tussen de legitieme belangen van de
-            Verwerkingsverantwoordelijke en deze van de gebruiker.
-          </li>
-          De Verwerkingsverantwoordelijke zal de gebruiker ervan in kennis
-          stellen van zodra de beperking van de werking wordt opgeheven.
-        </div>
-      </div>
-
-      <div>
-        <Header className="my-0  p-0">
-          HET RECHT OP UITWISSING (RECHT OM VERGETEN TE WORDEN)
-        </Header>
-        <div className="py-3 text-lg">
-          De gebruiker kan de uitwissing verkrijgen van zijn persoonsgegevens,
-          indien één van de hierna bepaalde motieven van toepassing is:
-          <li>
-            De gegevens zijn niet meer noodzakelijk met betrekking tot de
-            doeleinden van de verwerking;
-          </li>
-          <li>
-            De gebruiker heeft zijn toestemming voor verwerking van zijn
-            gegevens ingetrokken en er is geen juridische grondslag voor verdere
-            verwerking;
-          </li>
-          <li>
-            De gebruiker verzet zich tegen de verwerking en er is geen dwingend
-            legitiem motief voor verdere verwerking en/of de gebruiker oefent
-            zijn bijzonder recht op verzet uit met betrekking tot direct
-            marketingdoeleinden (hierin begrepen de profilering);
-          </li>
-          <li>
-            De persoonsgegevens hebben het voorwerp uitgemaakt van een
-            ongeoorloofd gebruik;
-          </li>
-          <li>
-            De persoonsgegevens dienen te worden uitgewist teneinde een
-            wettelijke verplichting na te leven (van het recht van de Europese
-            Unie of het recht van een Lidstaat) waaraan de
-            Verwerkingsverantwoordelijke onderworpen is;
-          </li>
-          <li>
-            De persoonsgegevens werden verzameld in het kader van een aanbod tot
-            levering van diensten die zich tot kinderen richt
-          </li>
-          <li>
-            De uitwissing van de gegevens is echter niet van toepassing in de
-            volgende gevallen:
-          </li>
-          <li>
-            Van zodra de verwerking noodzakelijk is voor de uitoefening van het
-            recht op vrije meningsuiting en het recht op informatie;
-          </li>
-          <li>
-            Van zodra de verwerking noodzakelijk is om een wettelijke bepaling
-            te kunnen naleven die verwerking vereist zoals voorzien door het
-            recht van de Europese Unie of door het recht van één van de
-            Lidstaten waaraan de Verwerkingsverantwoordelijke onderworpen is, of
-            wanneer de verwerking nodig is voor de vervulling van een taak van
-            algemeen belang dan wel voor een taak in het kader van de
-            uitoefening van het openbaar gezag;
-          </li>
-          <li>
-            Van zodra de verwerking noodzakelijk is voor redenen van algemeen
-            belang op het gebied van de volksgezondheid;
-          </li>
-          <li>
-            Van zodra de verwerking noodzakelijk is voor archiveringsdoeleinden
-            van algemeen belang, voor wetenschappelijk of historisch onderzoek
-            of voor statistische motieven, en op voorwaarde dat het recht op
-            uitwissing de realisatie van de doeleinden van de verwerking
-            onmogelijk kan maken of ernstig in het gedrag kan brengen;
-          </li>
-          <li>
-            Van zodra de verwerking noodzakelijk is voor de betwisting,
-            uitoefening of verdediging in rechte.
-          </li>
-          Behoudens andersluidend beding in de Algemene Verordening
-          Gegevensbescherming, is de Verwerkingsverantwoordelijke ertoe gehouden
-          om binnen een redelijke termijn en uiterlijk binnen de maand, te
-          antwoorden op de vraag tot uitwissing van de gebruiker en dient hij
-          zijn antwoord te motiveren indien hij voornemens is geen gunstig
-          gevolg aan de vraag van de gebruiker te geven.
-        </div>
-      </div>
-
-      <div>
-        <Header className="my-0  p-0">
-          HET RECHT OP « GEGEVENSOVERDRAAGBAARHEID »
-        </Header>
-        <div className="py-3 text-lg">
-          De gebruiker kan op ieder ogenblik vragen om op kosteloze wijze zijn
-          persoonsgegevens te bekomen in een gestructureerd en algemeen gebruikt
-          formaat, leesbaar door machines, met oog op overdracht ervan aan een
-          andere verwerkingsverantwoordelijke:
-          <li>
-            Indien de verwerking van de gegevens uitgevoerd wordt met behulp van
-            geautomatiseerde processen; en
-          </li>
-          <li>
-            Indien de verwerking gebaseerd is op de toestemming van de gebruiker
-            of op een overeenkomst die werd gesloten tussen deze laatste en de
-            Verwerkingsverantwoordelijke.
-          </li>
-          Onder diezelfde voorwaarden en volgende dezelfde modaliteiten heeft de
-          gebruiker eveneens het recht om van de Verwerkingsverantwoordelijke te
-          eisen dat de persoonsgegevens die op hem betrekking hebben
-          rechtstreeks zouden worden overgemaakt aan een andere
-          verantwoordelijke voor de verwerking van persoonsgegevens, voor zover
-          dit technisch mogelijk is.
-          <br />
-          Het recht op overdraagbaarheid van de gegevens is niet van toepassing
-          op de verwerking die noodzakelijk is voor een taak van algemeen belang
-          of die deel uitmaakt van de uitoefening van het openbaar gezag dat aan
-          de Verwerkingsverantwoordelijke opgedragen werd.
-        </div>
-      </div>
-
-      <div>
-        <Header className="my-0  p-0">
-          BESTEMMELINGEN VAN DE GEGEVENS EN OPENBAARMAKING AAN DERDEN
-        </Header>
-        <div className="py-3 text-lg">
-          De bestemmelingen van de verzamelde en verwerkte gegevens zijn, naast
-          de Verwerkingsverantwoordelijke zelf, de personeelsleden of andere
-          onderaannemers, de met zorg uitgekozen commerciële partners, gelegen
-          in België of de Europese Unie, die samenwerken met de
-          Verwerkingsverantwoordelijke in het kader van de commercialisering van
-          de producten of de levering van diensten.
-          <br />
-          In de hypothese waarin de gegevens zouden worden openbaargemaakt aan
-          derden met direct marketingdoeleinden of om commerciële
-          prospectiedoeleinden, zal de gebruiker hier voorafgaandelijk over
-          geïnformeerd worden teneinde hem toe te laten om de verwerking van
-          zijn gegevens door derden al dan niet te aanvaarden.
-          <br />
-          Gezien deze overdracht gegrond is op basis van de toestemming van de
-          gebruiker, kan deze laatste op ieder ogenblik zijn toestemming opnieuw
-          intrekken.
-          <br />
-          De Verwerkingsverantwoordelijke leeft alle in voege zijnde wettelijke
-          en reglementaire bepalingen na en zal er in ieder geval op toezien dat
-          zijn partners, personeelsleden, onderaannemers en andere derden die
-          toegang hebben tot de persoonsgegevens, deze Privacy Policy naleven.
-          <br />
-          De Verwerkingsverantwoordelijke behoudt zich het recht voor om de
-          persoonsgegevens van de gebruiker openbaar te maken indien een wet,
-          een juridische procedure of een bevel van een publieke autoriteit deze
-          openbaarmaking noodzakelijk zouden maken.
-        </div>
-      </div>
-
-      <div>
-        <Header className="my-0  p-0">VEILIGHEID</Header>
-        <div className="py-3 text-lg">
-          De Verwerkingsverantwoordelijke zorgt voor de gepaste technische en
-          organisatorische maatregelen teneinde een veiligheidsniveau te
-          garanderen wat de verwerking van de verzamelde gegevens betreft, dit
-          in overeenstemming met de risico’s die zich kunnen voordoen wat de
-          verwerking van de gegevens betreft en aangepast aan de aard van de te
-          beschermen gegevens. De Verwerkingsverantwoordelijke houdt rekening
-          met de stand van kennis, de kosten van de werken en de aard, de
-          strekking, de context en het doel van de verwerking, alsook met de
-          risico’s voor de rechten en vrijheden van de gebruikers.
-          <br />
-          De Verwerkingsverantwoordelijke gebruikt, wanneer hij gegevens op de
-          Website ontvangt of verstuurt, steeds encryptietechnologie die binnen
-          de IT-sector erkend werd als zijnde de industriële standaard.
-          <br />
-          De Verwerkingsverantwoordelijke heeft de noodzakelijke
-          veiligheidsmaatregelen getroffen teneinde de informatie die via de
-          Website verkregen werd te beschermen en teneinde verlies, misbruik of
-          wijzigingen ervan te vermijden.
-          <br />
-          Ingeval de persoonsgegevens die de Verwerkingsverantwoordelijke
-          verwerkt geschonden zouden worden, zal deze snel handelen teneinde de
-          oorzaak ervan te achterhalen en aan de situatie te verhelpen.
-          <br />
-          De Verwerkingsverantwoordelijke brengt de gebruiker hiervan op de
-          hoogte wanneer de wet hem daartoe verplicht.
-        </div>
-      </div>
-
-      <div>
-        <Header className="my-0  p-0">BEZWAREN EN KLACHTEN</Header>
-        <div className="py-3 text-lg">
-          De gebruiker kan een bezwaar indienen bij de Belgische
-          <br />
-          Gegevensbeschermingsautoriteit op het volgende adres:
-          <br />
-          <br />
-          Gegevensbeschermingsautoriteit
-          <br />
-          <br />
-          Drukpersstraat 35, 1000 Brussel
-          <br />
-          <br />
-          +32 (0)2 274 48 00
-          <br />
-          <br />
-          <p className="underline">contact@apd-gba.be</p>
-        </div>
-      </div>
-
-      <div>
-        <Header className="my-0  p-0">CONTACTGEGEVENS</Header>
-        <div className="py-3 text-lg">
-          Voor iedere vraag en/of klacht, in het bijzonder met betrekking tot de
-          duidelijkheid en toegankelijkheid van de Privacy Policy, kan de
-          gebruiker de Verwerkingsverantwoordelijke contacteren:
-          <br />
-          <br />
-          Per e-mail: sushimerksem@gmail.com
-          <br />
-          <br />
-          Per post: Annuntiatenstraat 1, 2170 Merksem
-        </div>
-      </div>
-
-      <div>
-        <Header className="my-0  p-0">
-          TOEPASSELIJK RECHT EN BEVOEGDE RECHTSMACHT
-        </Header>
-        <div className="py-3 text-lg">
-          Deze privacy policy is onderworpen aan het Belgisch recht.
-          <br />
-          <br />
-          De rechtbanken van het volgend gerechtelijk arrondissement zijn
-          bevoegd in geval van geschil: Antwerpen Per
-          e-mail: sushimerksem@gmail.com
-        </div>
-      </div>
-
-      <div>
-        <Header className="my-0  p-0">DIVERSE BEPALINGEN</Header>
-        <div className="py-3 text-lg">
-          De Verwerkingsverantwoordelijke behoudt zich het recht voor om op
-          ieder ogenblik de bepalingen van deze Privacy Policy te wijzigen. De
-          wijzigingen zullen gepubliceerd worden met melding wat hun
-          inwerkingtreding betreft.
-          <br />
-          <br />
-          Deze versie van de Privacy Policy dateert van 27/12/2023.
+          The user may, at any time, free of charge and for reasons related to
+          their particular situation,
         </div>
       </div>
     </div>
-  );
-};
+  )}
 
-export default PrivacyPolicy;
+  
