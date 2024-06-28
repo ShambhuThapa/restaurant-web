@@ -32,7 +32,7 @@ export const useAddOrder = () => {
           `Order placed successfully. Confirmation message has been sent to your email.`
         );
       } else {
-        toast.success(`Please fill up your payment details.`);
+        toast.success(`Order placed successfully. Please fill up your payment details.`);
       }
     },
     onError: (error) => {

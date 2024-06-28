@@ -14,6 +14,3 @@ export const converToRelativeDate = (date: string) => {
   return formatRelative(parseISO(date), new Date());
 };
 
-export const repalceDotWithComma = (text: string) => {
-  return text.replace(/\./g, ",").replace(/,/g, ",");
-};

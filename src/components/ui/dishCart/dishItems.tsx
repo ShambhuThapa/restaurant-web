@@ -5,7 +5,6 @@ import { CheckIcon, CrossIcon, ShoppingCart, XIcon } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 
-import { repalceDotWithComma } from "@/lib/utils";
 import { useOrdersContext } from "@/hooks/useOrder";
 
 import { ControlledInput } from "../controlledInput";
@@ -71,7 +70,7 @@ const DishItems = ({ dish }: { dish: any }) => {
             </div>
 
             <p className="mt-1 text-sm font-medium text-gray-900">
-              € {repalceDotWithComma(`${dish?.price}`)}
+              € {dish?.price}
             </p>
 
               <p className="text-gray-500 text-sm pt-1">{dish?.description}</p>

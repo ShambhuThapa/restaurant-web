@@ -8,11 +8,8 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Ban, XCircle, XIcon } from "lucide-react";
 import { useForm } from "react-hook-form";
 
-import { repalceDotWithComma } from "@/lib/utils";
 import { useOrdersContext } from "@/hooks/useOrder";
 import { hammersmith } from "@/app/layout";
-import PrivacyPolicy from "@/app/privacyPolicy/page";
-
 import { Button } from "../button";
 import { Checkbox } from "../checkbox";
 import { Header } from "../header";
@@ -84,8 +81,7 @@ export default function Cart(props: CartProps) {
                       <div className="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
                         <div className="flex items-start justify-between">
                           <Dialog.Title className="text-lg font-medium text-gray-900">
-                            {/* Shopping cart */}
-                            Winkelwagen
+                            Shopping cart 
                           </Dialog.Title>
                           <div className="ml-3 flex h-7 items-center">
                             <button
@@ -138,12 +134,12 @@ export default function Cart(props: CartProps) {
                                           <div className="flex flex-col">
                                             <p>
                                               €
-                                              {repalceDotWithComma(
-                                                `${dish?.subTotal.toFixed(2)}`
-                                              ) ??
-                                                repalceDotWithComma(
-                                                  `${dish?.price.toFixed(2)}`
-                                                )}
+                                              {
+                                                dish?.subTotal.toFixed(2)
+                                               ??
+                                                
+                                                  dish?.price.toFixed(2)
+                                                }
                                             </p>
                                           </div>
                                         </div>
@@ -154,8 +150,7 @@ export default function Cart(props: CartProps) {
                                       <div className="flex flex-1 items-center justify-between text-sm pt-4">
                                         <div className="flex gap-x-2 items-center">
                                           <p className="text-gray-500 flex gap-x-1">
-                                            {/* Quantity */}
-                                            Aantal
+                                            Quantity
                                           </p>
                                           <div className="flex gap-x-2 items-center">
                                             <button
@@ -192,8 +187,7 @@ export default function Cart(props: CartProps) {
                                               handleRemoveOrder(dish?.id)
                                             }
                                           >
-                                            {/* Remove */}
-                                            Verwijderen
+                                            Remove
                                           </button>
                                         </div>
                                       </div>
@@ -216,32 +210,30 @@ export default function Cart(props: CartProps) {
                       {cartData.length ? (
                         <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
                           <div className="flex justify-between text-base font-medium text-gray-900">
-                            {/* <p>Total Price</p> */}
-                            <p>Totaal incl. btw</p>
-                            <p>€{repalceDotWithComma(`${totalPrice.toFixed(2)}`)}</p>
+                            <p>Total Price</p>
+                            <p>€{totalPrice.toFixed(2)}</p>
                           </div>
 
                           <p className="text-sm text-gray-400 py-2">
-                            {/* Discount and taxes calculated at checkout... */}
-                            Korting wordt verrekend in volgende stap
+                            Discount and taxes calculated at checkout...
                           </p>
                           <div className="py-1">
+                            
                             <Checkbox
                               register={register}
-                              leftLabel="Ik heb de "
-                              rightLabel=" gelezen en ben hiermee akkoord."
+                              leftLabel="I have read the "
+                              rightLabel=" and agree with it."
                               linkLabel={"privacy policy"}
                               labelClassName="text-gray-500 text-sm"
                               link="/privacyPolicy"
                               name="policy"
-                              error={errors?.policy?.message as string}
-                            />
+                              error={errors?.policy?.message as string}/>
+
                           </div>
 
                           <div className="mt-6">
                             <Button
-                              // label="Checkout"
-                              label="Afrekenen"
+                              label="Checkout"
                               className="flex items-center justify-center rounded-md border border-transparent bg-primary px-6 py-3 text-base font-medium text-white shadow-sm "
                               onClick={handleCheckout}
                               disabled={!watch("policy")}
@@ -254,8 +246,7 @@ export default function Cart(props: CartProps) {
                                 className="font-medium text-primary ml-1 hover:text-primary-600"
                                 onClick={handleCloseCart}
                               >
-                                {/* Continue Shopping */}
-                                of Verder winkelen
+                                Continue Shopping
                                 <span aria-hidden="true"> &rarr;</span>
                               </button>
                             </p>

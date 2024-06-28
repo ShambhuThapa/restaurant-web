@@ -22,7 +22,7 @@ const EsewaForm = ({orderDetails}:any) => {
     <input type="text" id="product_code" name="product_code" value ="EPAYTEST" required/>
     <input type="text" id="product_service_charge" name="product_service_charge" value="0" required/>
     <input type="text" id="product_delivery_charge" name="product_delivery_charge" value="0" required/>
-    <input type="text" id="success_url" name="success_url" value="https://esewa.com.np" required/>
+    <input type="text" id="success_url" name="success_url" value="http://localhost:3000/orderStatus" required/>
     <input type="text" id="failure_url" name="failure_url" value="https://google.com" required/>
     <input type="text" id="signed_field_names" name="signed_field_names" value={orderDetails?.signed_field_names} required/>
     <input type="text" id="signature" name="signature" value={orderDetails?.signature} placeholder="signature" required/>

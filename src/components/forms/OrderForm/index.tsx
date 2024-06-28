@@ -28,9 +28,10 @@ import { useAddOrder } from "@/hooks/api/orders/useAddOrder";
 import { useOrdersContext } from "@/hooks/useOrder";
 import PayNow from "@/components/ui/payment";
 import EsewaForm from "../paymentForm/esewa";
+import { useEsewaPayment } from "@/hooks/api/payment/useEsewaPayment";
 
 const paymentOptions = [
-  { label: "Ter plaatse betalen", value: "cash", iconLeftUrl: "/payment/cash.png" },
+  { label: "Cash", value: "cash", iconLeftUrl: "/payment/cash.png" },
   { label: "Esewa", value: "esewa", iconLeftUrl: "/payment/creditcard.png" },
   {
     label: "Khalti",
@@ -40,7 +41,7 @@ const paymentOptions = [
 ];
 
 const paymentOptionsCash = [
-  { label: "Ter plaatse betalen", value: "cash", iconLeftUrl: "/payment/cash.png" },
+  { label: "Cash", value: "cash", iconLeftUrl: "/payment/cash.png" },
 ];
 
 const isDeliveryDefaultValues = {
@@ -76,6 +77,7 @@ export const OrderForm = ({ setIsDelivery, isDelivery }: any) => {
   const { mutate, isSuccess, isPending, data }: any = useAddOrder();
   const { data: locations } = useGetFilterLocation();
   const [openPaymentModal, setOpenPaymentModal] = useState(false);
+  const {mutate:handleEsewaPayment}=useEsewaPayment();
 
   const router = useRouter();
 
@@ -99,7 +101,6 @@ export const OrderForm = ({ setIsDelivery, isDelivery }: any) => {
   const { data: location } = useGetLocation(watch("community")?.value);
 
   const onSubmit: SubmitHandler<TOrder> = (data) => {
-    console.log("first",data);
     if (location && totalPrice && totalPrice < location?.minPrice) {
       setError("community.label", {
         message: `Minimum order for ${location.locationName} is €${location.minPrice}`,
@@ -170,7 +171,7 @@ export const OrderForm = ({ setIsDelivery, isDelivery }: any) => {
   useMemo(() => {
     if (watch("isTakeAway") === "true") {
       setIsDelivery(false);
-      setValue("paymentMethod", { label: "Ter plaatse betalen", value: "cash" });
+      setValue("paymentMethod", { label: "Cash", value: "cash" });
       setValue("isDelivery", "false");
     }
   }, [watch("isTakeAway")]);
@@ -185,7 +186,10 @@ export const OrderForm = ({ setIsDelivery, isDelivery }: any) => {
 
     if (isSuccess && data?.paymentMethod != "cash") {
       localStorage.setItem("orderDetails", JSON.stringify(data));
-      setOpenPaymentModal(Boolean(data?.orderId));
+      if(data?.paymentMethod==="esewa"){
+        handleEsewaPayment(data);
+      }
+      // setOpenPaymentModal(Boolean(data?.orderId));
     }
   }, [data, isSuccess, setOpenPaymentModal]);
 
@@ -385,13 +389,13 @@ export const OrderForm = ({ setIsDelivery, isDelivery }: any) => {
           </div>
         </div>
       </form>
-      <Modal show={openPaymentModal} disableCloseModal={true}>
+      {/* <Modal show={openPaymentModal} disableCloseModal={true}>
         <div className="px-5 py-10">
           {isSuccess && data?.orderId && (
             <PayNow orderDetails={data} closeModal={closeModal} />
           )}
         </div>
-      </Modal>
+      </Modal> */}
     </>
   );
 };

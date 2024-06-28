@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Divider, Header } from "@/components";
 import { ShoppingCartIcon } from "lucide-react";
 
-import { cn, repalceDotWithComma } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { useGetAllDishType } from "@/hooks/api/dishType/useGetAllDishType";
 import { useOrdersContext } from "@/hooks/useOrder";
 import Cart from "@/components/ui/cart";

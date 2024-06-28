@@ -1,13 +1,9 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Divider, Header, Input } from "@/components";
+import { Divider, Header } from "@/components";
 import { ArrowBigLeft, Trash2 } from "lucide-react";
-
-import { repalceDotWithComma } from "@/lib/utils";
 import { useOrdersContext } from "@/hooks/useOrder";
 import { OrderForm } from "@/components/forms";
 
@@ -60,8 +56,7 @@ const Page = () => {
               variant="md"
               className="text-primary text-center normal-case"
             >
-              {/* Order Summary */}
-              Jou winkelwagen
+              Order Summary
             </Header>
 
             {orders.length ? (
@@ -85,8 +80,8 @@ const Page = () => {
                               <div className="flex flex-col">
                                 <p>
                                   €
-                                  {repalceDotWithComma(`${dish?.subTotal}`) ??
-                                    repalceDotWithComma(`${dish?.price}`)}
+                                  {dish?.subTotal ??
+                                    dish?.price}
                                 </p>
                               </div>
                             </div>
@@ -97,25 +92,21 @@ const Page = () => {
                           <div className="my-2 flex justify-between items-end">
                             {isDelivery ? (
                               <p className="text-gray-500 text-sm flex gap-x-1">
-                                Korting (Levering): {dish?.deliveryDiscount}%
-                                {/* Delivery discount: {dish?.deliveryDiscount}% */}
+                                Delivery discount: {dish?.deliveryDiscount}%
                               </p>
                             ) : (
                               <p className="text-gray-500 text-sm flex gap-x-1">
-                                Korting (Afhaal): {dish?.takeAwayDiscount}%{" "}
-                                {/* Take away discount: {dish?.takeAwayDiscount}%{" "} */}
+                                Take away discount: {dish?.takeAwayDiscount}%{" "}
                               </p>
                             )}
                             <p className="text-gray-500 text-sm flex gap-x-1">
-                              {/* Vat: {dish?.vat}% */}
-                              Btw: {dish?.vat}%
+                              Vat: {dish?.vat}%
                             </p>
                           </div>
                           <div className="flex flex-1 items-center justify-between text-sm pt-4">
                             <div className="flex gap-x-2 items-center">
                               <p className="text-gray-500 flex gap-x-1">
-                                {/* Quantity */}
-                                Aantal
+                                Quantity
                               </p>
                               <div className="flex gap-x-2 items-center">
                                 <button
@@ -168,37 +159,31 @@ const Page = () => {
             <Divider variant="full" className="h-[1px] bg-primary-100" />
             <div className="">
               <div className="flex justify-between items-center text-base font-medium text-gray-900">
-                {/* <p>Sub Total</p> */}
-                <p>Subtotaal incl. btw</p>
+                <p>Sub Total</p>
                 <p className="text-lg  text-gray-700">
-                  €{repalceDotWithComma(`${totalPrice.toFixed(2)}`)}
+                  €{totalPrice.toFixed(2)}
                 </p>
               </div>
               <div className="flex justify-between items-center text-base font-medium text-gray-900">
-                {/* <p>VAT</p> */}
-                <p>Btw</p>
-
+                <p>VAT</p>
                 <p className="text-lg text-gray-700">
-                  €{repalceDotWithComma(`${vat.toFixed(2)}`)}
+                  €{vat.toFixed(2)}
                 </p>
               </div>
               <div className="flex justify-between items-center text-base font-medium text-gray-900">
-                {/* <p>Discount</p> */}
-                <p>Korting</p>
+                <p>Discount</p>
                 <p className="text-lg text-gray-700">
-                  €{repalceDotWithComma(`${discount.toFixed(2)}`)}
+                  €{discount.toFixed(2)}
                 </p>
               </div>
 
               <Divider variant="full" className="bg-gray-300" />
               <div className="flex justify-between items-center text-base font-medium text-gray-900">
-                {/* <p>Grand Total</p> */}
-                <p>Totaal incl. btw</p>
-
+                <p>Grand Total</p>
                 <p className="text-xl text-primary">
                   €
                   {grandTotal &&
-                    repalceDotWithComma(`${grandTotal.toFixed(2)}`)}
+                    grandTotal.toFixed(2)}
                 </p>
               </div>
 
@@ -208,8 +193,7 @@ const Page = () => {
               >
                 <ArrowBigLeft size={28} className="text-gray-600" />
                 <span className="text-center mt-1 border-b border-primary">
-                  {/* Go back to menu */}
-                  Terug naar de hoofdmenu
+                  Go back to menu
                 </span>
               </button>
             </div>
