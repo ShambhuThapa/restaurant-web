@@ -175,8 +175,8 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
               <div className="h-0 flex-1 overflow-y-auto  pb-4">
                 <div className=" h-28 bg-white shadow-sm">
                   <Image
-                    src={"/logo2.jpeg"}
-                    alt="sushimerksem Logo"
+                    src={"/logo.svg"}
+                    alt="restaurant Logo"
                     width={100}
                     height={100}
                     className="z-10 h-full w-full object-contain py-2"
@@ -313,7 +313,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
             {/* <div className='flex flex-shrink-0 items-center justify-center px-4'> */}
             <div className="h-32 border-b border-gray-100 bg-white shadow-sm ">
               <Image
-                src={"/logo2.jpeg"}
+                src={"/logo.svg"}
                 alt="sushimerksem Logo"
                 width={100}
                 height={100}

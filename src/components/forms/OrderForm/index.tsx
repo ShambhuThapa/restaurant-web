@@ -32,11 +32,11 @@ import { useEsewaPayment } from "@/hooks/api/payment/useEsewaPayment";
 
 const paymentOptions = [
   { label: "Cash", value: "cash", iconLeftUrl: "/payment/cash.png" },
-  { label: "Esewa", value: "esewa", iconLeftUrl: "/payment/creditcard.png" },
+  { label: "Esewa", value: "esewa", iconLeftUrl: "/payment/esewa.png" },
   {
     label: "Khalti",
     value: "khalti",
-    iconLeftUrl: "/payment/bancontact.png",
+    iconLeftUrl: "/payment/khalti.png",
   },
 ];
 

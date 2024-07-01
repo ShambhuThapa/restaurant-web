@@ -98,7 +98,7 @@ export const Navbar = ({ header }: { header: string }) => {
       </div>
       <Link href={"/home"}>
         <Image
-          src="/logo.png"
+          src="/logo.svg"
           alt="logo"
           height={350}
           width={350}
@@ -140,7 +140,7 @@ export const Navbar = ({ header }: { header: string }) => {
                 >
                   <Link href={"/home"}>
                     <Image
-                      src="/logo.png"
+                      src="/logo.svg"
                       alt="logo"
                       height={100}
                       width={100}

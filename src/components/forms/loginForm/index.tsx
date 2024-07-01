@@ -81,7 +81,7 @@ export const LogInForm = () => {
         <div className="flex flex-col  gap-y-5    lg:w-[450px] h-auto w-[90vw]  rounded-lg border border-gray-100 shadow-xl px-6 py-3  ">
           <div className=" flex flex-col gap-y-3  items-center ">
             <Image
-              src="/logo.png"
+              src="/logo.svg"
               alt="Logo"
               width={100}
               height={100}
