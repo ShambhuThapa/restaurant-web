@@ -1,7 +1,7 @@
 
 import { Divider, Header } from "@/components";
 
-export const PrivacyPolicy = () => {
+ const PrivacyPolicy = () => {
   return (
     <div className="w-full flex flex-col gap-y-4 lg:px-5 px-0 py-7 text-justify text-gray-700">
       <Header className="my-0 py-0 text-center ">Privacy Policy</Header>
@@ -222,4 +222,5 @@ export const PrivacyPolicy = () => {
     </div>
   )}
 
+  export default PrivacyPolicy;
   

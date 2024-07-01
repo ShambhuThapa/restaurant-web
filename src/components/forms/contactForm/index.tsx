@@ -15,7 +15,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 
 import { contactSchema, IContact } from "@/lib/validation/contactSchema";
 import { useAddContactMessage } from "@/hooks/api/contactMessage/useAddContactMessage";
-import { PrivacyPolicy } from "@/app/privacyPolicy/page";
+import  PrivacyPolicy  from "@/app/privacyPolicy/page";
 
 
 export const ContactForm = () => {
