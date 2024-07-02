@@ -8,8 +8,6 @@ import {
 
 import "@/styles/globals.css";
 
-import { cn } from "@/lib/utils";
-
 import Providers from "./providers";
 
 const metadata: Metadata = {

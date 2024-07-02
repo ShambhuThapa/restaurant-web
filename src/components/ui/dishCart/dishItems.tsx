@@ -42,7 +42,7 @@ const DishItems = ({ dish }: { dish: any }) => {
       setValue("quantity", `${parseInt(quantity) - 1}`);
     }
   };
-  console.log(dish);
+  // console.log(dish);
   const isDisableInput = orders?.some((el) => el?.id === dish?.id);
   return (
     <li key={dish.id} className="flex py-6 sm:py-10">

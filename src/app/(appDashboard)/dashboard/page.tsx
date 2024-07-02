@@ -19,7 +19,6 @@ const Page = () => {
     });
   };
 
-  console.log(status, "data");
   return (
     <div className="">
       <p className="text-gray-800">Today&apos;s order information.</p>

@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import {  useRouter } from "next/navigation";
+
 import { Button, Header } from "@/components";
 import { ArrowLeftCircle } from "lucide-react";
 
@@ -11,19 +12,11 @@ import {
   playfair_Display,
   playfair_Display_Sc,
 } from "@/app/layout";
-import { useCheckEsewaPaymentStatus } from "@/hooks/api/payment/useCheckEswaPaymentStatus";
+import { useCheckEsewaPaymentStatus } from "@/hooks/api/payment/useCheckEsewaPaymentStatus";
 
-interface PropsData {
-  paymentMethod: string;
-  phoneNumber: string;
-  email: string;
-  amountPaid: number;
-}
 
-const SuccessPage = () => {
+const Page = () => {
   const router = useRouter();
-
-  const [paymentId, setPaymentId] = useState("");
   const { updateOrders } = useOrdersContext();
 
   const paymentIntentId =
@@ -31,7 +24,7 @@ const SuccessPage = () => {
       ? new URLSearchParams(window.location.search).get("data")
       : null;
 
-  const { data, isPending } = useCheckEsewaPaymentStatus(paymentId);
+  const { mutate:checkStatus,data, isPending } = useCheckEsewaPaymentStatus();
 
   const goToOrder = () => {
     localStorage.removeItem("orderDetails");
@@ -47,9 +40,10 @@ const SuccessPage = () => {
 
   useEffect(() => {
     if (paymentIntentId) {
-      setPaymentId(paymentIntentId);
+      checkStatus(paymentIntentId);
     }
-  }, [paymentIntentId, setPaymentId]);
+  }, [paymentIntentId]);
+
 
   return (
     <>
@@ -124,7 +118,7 @@ const SuccessPage = () => {
         </div>
       ) : null}
 
-      {paymentIntentId && (isPending || !data) && (
+      {  (isPending || !data) && (
         <div className="w-full flex justify-center items-center pt-48 mb-10">
           <div className="lg:w-[65vw] w-[97vw] py-40 span-4 shadow bg-primary flex flex-col items-center">
             <Spinner color="white" height="12" width="12" />
@@ -135,4 +129,4 @@ const SuccessPage = () => {
   );
 };
 
-export default SuccessPage;
+export default Page;

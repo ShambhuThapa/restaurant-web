@@ -5,13 +5,16 @@ import { useMutation } from "@tanstack/react-query";
 import toast from "react-hot-toast";
 
 
-export const postPaymentDetails = async (hashCode: string) => {
+export const checkPaymentStatus = async (hashCode: string) => {
   try {
     const response = await axios({
-      url:baseUrl + "/v1/payment/verify",
+      url:baseUrl + "/payment/verify",
       method: "POST",
+      headers: {
+        "Content-Type":"application/json",
+      },
       data: {
-        encodedData:hashCode
+        "encodedData":hashCode
       },
     });
     return response.data;
@@ -24,9 +27,9 @@ export const postPaymentDetails = async (hashCode: string) => {
   }
 };
 
-export const useCheckEsewaPaymentStatus = (data: any) => {
+export const useCheckEsewaPaymentStatus = () => {
     return useMutation({
-      mutationFn: () => postPaymentDetails(data),
+      mutationFn: (hashCode: string) => checkPaymentStatus(hashCode),
       onSuccess: (data) => {
         if(data?.status==="COMPLETE"){
          toast.success("Successful Payment");
@@ -35,5 +38,5 @@ export const useCheckEsewaPaymentStatus = (data: any) => {
       onError: (error) => {
         toast.error(`${error.message || "Some error occured"}`);
       },
-    });
-  };
+  });
+}
