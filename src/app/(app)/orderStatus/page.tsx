@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useParams, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { Button, Header } from "@/components";
 import { ArrowLeftCircle } from "lucide-react";
 

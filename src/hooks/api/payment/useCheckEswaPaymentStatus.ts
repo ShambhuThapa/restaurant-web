@@ -11,7 +11,7 @@ export const postPaymentDetails = async (hashCode: string) => {
       url:baseUrl + "/v1/payment/verify",
       method: "POST",
       data: {
-        code:hashCode
+        encodedData:hashCode
       },
     });
     return response.data;

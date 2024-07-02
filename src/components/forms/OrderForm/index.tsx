@@ -28,7 +28,6 @@ import { useAddOrder } from "@/hooks/api/orders/useAddOrder";
 import { useOrdersContext } from "@/hooks/useOrder";
 import PayNow from "@/components/ui/payment";
 import EsewaForm from "../paymentForm/esewa";
-import { useEsewaPayment } from "@/hooks/api/payment/useEsewaPayment";
 
 const paymentOptions = [
   { label: "Cash", value: "cash", iconLeftUrl: "/payment/cash.png" },
@@ -77,7 +76,6 @@ export const OrderForm = ({ setIsDelivery, isDelivery }: any) => {
   const { mutate, isSuccess, isPending, data }: any = useAddOrder();
   const { data: locations } = useGetFilterLocation();
   const [openPaymentModal, setOpenPaymentModal] = useState(false);
-  const {mutate:handleEsewaPayment}=useEsewaPayment();
 
   const router = useRouter();
 
@@ -186,10 +184,7 @@ export const OrderForm = ({ setIsDelivery, isDelivery }: any) => {
 
     if (isSuccess && data?.paymentMethod != "cash") {
       localStorage.setItem("orderDetails", JSON.stringify(data));
-      if(data?.paymentMethod==="esewa"){
-        handleEsewaPayment(data);
-      }
-      // setOpenPaymentModal(Boolean(data?.orderId));
+      setOpenPaymentModal(Boolean(data?.orderId));
     }
   }, [data, isSuccess, setOpenPaymentModal]);
 
@@ -389,13 +384,16 @@ export const OrderForm = ({ setIsDelivery, isDelivery }: any) => {
           </div>
         </div>
       </form>
-      {/* <Modal show={openPaymentModal} disableCloseModal={true}>
+       <Modal show={openPaymentModal} title="Confirm Submit" onModalClose={closeModal}>
         <div className="px-5 py-10">
           {isSuccess && data?.orderId && (
+            <>
+            <h2 className="text-center">Are you sure ?.You want to proceed payment.</h2>
             <PayNow orderDetails={data} closeModal={closeModal} />
+            </>
           )}
         </div>
-      </Modal> */}
+      </Modal>
     </>
   );
 };
