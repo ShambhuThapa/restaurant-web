@@ -23,7 +23,7 @@ const EsewaForm = ({ orderDetails, closeModal }: any) => {
         <input type="text" id="product_code" name="product_code" value="EPAYTEST" hidden required />
         <input type="text" id="product_service_charge" name="product_service_charge" value="0" hidden required />
         <input type="text" id="product_delivery_charge" name="product_delivery_charge" value="0" hidden required />
-        <input type="text" id="success_url" name="success_url" value="http://localhost:3000/orderStatus" hidden required />
+        <input type="text" id="success_url" name="success_url" value="https://restaurant-web-eta.vercel.app/orderStatus" hidden required />
         <input type="text" id="failure_url" name="failure_url" value="https://restaurant-web-eta.vercel.app/home" hidden required />
         <input type="text" id="signed_field_names" name="signed_field_names" value={orderDetails?.signed_field_names} hidden required />
         <input type="text" id="signature" name="signature" value={orderDetails?.signature} placeholder="signature" hidden required />
